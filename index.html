@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Us - Mothotsi Manufacturing & Construction</title>
 
@@ -140,6 +141,33 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    color: #FFF;
+    transform: scale(1.1);
+}
 </style>
 </head>
 
@@ -215,6 +243,7 @@ button {
     <p>Ready to secure your property? Get in touch with us today!</p>
     <p>📍 Soshanguve, Pretoria</p>
     <p>📞 Phone: <a href="tel:+27000000000" style="color: gold; text-decoration: none;">[Insert Phone Number]</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/27000000000" target="_blank" style="color: gold; text-decoration: none;">+27 00 000 0000</a></p>
     <p>📧 Email: <a href="mailto:info@mothotsi.co.za" style="color: gold; text-decoration: none;">info@mothotsi.co.za</a></p>
 </section>
 
@@ -241,6 +270,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/27000000000" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
